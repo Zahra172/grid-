@@ -1,0 +1,303 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+}
+.container {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: repeat(8.333333%);
+  grid-template-areas:
+    "iphone iphone iphone iphone iphone iphone Rotary Rotary Rotary Rotary Rotary Rotary "
+    "keyboard keyboard keyboard imac imac imac imac imac imac icloud icloud icloud "
+    "games games games bestchoice bestchoice bestchoice bestchoice bestchoice bestchoice icloud icloud icloud "
+    "twitter twitter twitter popular popular popular tv tv tv tv tv tv ";
+}
+.iphone {
+  grid-area: iphone;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+h4 {
+  font-family: Montserrat, sans-serif;
+  font-size: 12px;
+  color: #9fa3a7;
+}
+.iphone img {
+  width: 25%;
+}
+.pp {
+  font-family: "Open Sans", sans-serif;
+  font-size: 22px;
+}
+.iphone .learn {
+  color: #9fa3a7;
+  font-family: "Open Sans", sans-serif;
+}
+.iphone-caption {
+  width: 35%;
+}
+.Rotary {
+  grid-area: Rotary;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f7f8f9;
+}
+.rotary-caption {
+  text-align: center;
+  width: 50%;
+}
+.rotary-caption p {
+  font-size: 48px;
+  font-family: "Arvo", serif;
+  color: #333;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.rotary-caption a {
+  color: #27b9c2;
+  text-decoration: underline;
+}
+.keyboard {
+  grid-area: keyboard;
+  text-align: center;
+  background-color: #f05638;
+}
+h3 {
+  font-family: "Arvo", serif;
+}
+.keyboard a {
+  list-style: none;
+  color: #ffc80a;
+  margin-top: 20px;
+  font-size: 12px;
+}
+.keyboard img {
+  width: 50%;
+}
+.imac {
+  width: 90%;
+  grid-area: imac;
+  display: flex;
+  justify-content: space-around;
+}
+.imac-right {
+  width: 30%;
+}
+.imac-right img {
+  width: 100%;
+  position: relative;
+
+  left: -65%;
+}
+.imac-left {
+  width: 40%;
+}
+.imac-left p {
+  color: #9fa3a7;
+}
+.imac-left a {
+  margin-top: 20px;
+  text-decoration: none;
+  font-size: 12px;
+  color: #27b9c2;
+}
+
+.icloud {
+  grid-area: icloud;
+  text-align: center;
+  background-color: #8f76bc;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.cloud-img {
+  background-color: #8166b0;
+  border-radius: 50%;
+  width: 350px;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.popular-cloud {
+  padding: 5px;
+  background-color: hsla(0, 0%, 100%, 0.08);
+  width: 25%;
+  border-radius: 15px;
+  margin: 20px;
+}
+.popular-cloud span {
+  font-size: 10px;
+  color: white;
+  margin-top: 20px;
+}
+.popular-cloud ~ span {
+  font-family: Montserrat, sans-serif;
+  color: white;
+  margin: 20px;
+}
+.icloud h2 {
+  color: white;
+  font-family: Arvo, sans-serif;
+  font-size: 32px;
+}
+.icloud p {
+  width: 50%;
+  font-size: 12px;
+  color: white;
+  line-height: 20px;
+}
+.cloud-img img {
+  width: 40%;
+}
+.icloud button {
+  margin-top: 30px;
+  width: 160px;
+  height: 60px;
+  background-color: #ffc80a;
+  border: none;
+  border-radius: 50px;
+  margin-bottom: 30px;
+}
+.icloud button a {
+  font-weight: 700px;
+}
+.games {
+  grid-area: games;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.games a {
+  color: #27b9c2;
+  font-size: 12px;
+  margin-top: 20px;
+}
+.games img {
+  width: 50%;
+}
+.bestchoice {
+  grid-area: bestchoice;
+  background-color: #93b6b7;
+}
+.bestchoice p {
+  margin-top: 15px;
+  margin-left: 20px;
+  background-color: #fa684f;
+  padding: 8px;
+  border-radius: 10px;
+  width: 10%;
+  text-align: center;
+  font-size: 8px;
+  color: white;
+}
+.best-img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+}
+.best-img h3 {
+  font-family: Arvo, sans-serif;
+  font-size: 22px;
+  line-height: 32px;
+  color: white;
+  width: 30%;
+  text-align: center;
+}
+.bestchoice img {
+  width: 100%;
+  position: relative;
+  left: -40px;
+  top: 20px;
+}
+
+.twitter {
+  grid-area: twitter;
+  text-align: center;
+  background-color: #38d5f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.twitter .color {
+  background-color: #35cfed;
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+}
+.twitter img {
+  width: 43px;
+  padding-top: 50px;
+}
+.twitter h3 {
+  font-size: 22px;
+  font-family: "Arvo", serif;
+  color: white;
+  width: 70%;
+  margin-left: 35px;
+}
+.popular {
+  grid-area: popular;
+  text-align: center;
+  margin: auto;
+  background-color: #f7f8f9;
+}
+.popular span {
+  background-color: #7bc424;
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+  font-size: 8px;
+}
+.popular h3 {
+  width: 80%;
+  font-size: 22px;
+  font-family: Arvo, sans-serif;
+
+  line-height: 32px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.tv {
+  grid-area: tv;
+  display: flex;
+  justify-content: space-around;
+  background-color: #2c2c2c;
+}
+.tv h3 {
+  margin-bottom: 20px;
+  font-family: "Arvo", sans-serif;
+  font-size: 22px;
+  position: relative;
+  top: 30%;
+  color: white;
+}
+.tv img {
+  width: 30%;
+}
+
+@media (max-width: 990px) {
+  .container {
+    grid-template-columns: 50%;
+    grid-template-areas:
+      "Rotary Rotary"
+      "iphone iphone"
+      "keyboard games"
+      "imac imac"
+      "twitter icloud"
+      "bestchoice icloud"
+      "popular popular"
+      "tv tv";
+  }
+}
